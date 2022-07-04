@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const express = require('express');
 const app = express()
-const  port = 5000
+const  port = process.env.PORT || 5000
 
 //connec url
 const url='mongodb+srv://risa:risa@cluster0.npdjknu.mongodb.net/?retryWrites=true&w=majority'
